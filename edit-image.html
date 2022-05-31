@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Image</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+          * {
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 95%;
+            display: grid;
+            grid-template-columns: 300px calc(100% - 300px);
+        }
+        .container .left-sidebar{
+            height: 100vh; 
+            background-color: #543864;
+            padding: 1rem 1rem;
+        }
+        /* Sidebar ends here */
+
+    /* Maincontent starts here */
+      
+       .main-content .box1{
+        margin-bottom: 1em;
+           padding-top: 1em;
+           border: 1px solid #E2E2E2;
+       }
+        .top-wrap{
+            display: flex;
+            justify-content: space-between;
+            padding: 2em;
+        }
+
+        .top-content img{
+           padding-left: 1em;
+        }
+        
+        .content-text{
+            font-size: 20px;
+            font-family: Metropolis;
+            font-weight: 500;
+            margin: 20px;
+        }
+
+        .save-btn{
+            width: 86px;
+            font-size: 16px;
+            font-family: Metropolis;
+            font-weight: 400;
+            padding: 12px;
+            background-color:#543864;
+            color: #ffffff;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+            box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+         }
+         .descripton-text{
+             position: relative;
+             text-align: center;
+             font-size: 16px;
+             font-family: Metropolis;
+             font-weight: 400;
+             line-height: 1.8;
+         }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 49%);
+            column-gap: 10px;
+            row-gap: 27px;;
+            background-color: #ffffff;
+            padding: 2em 2em;
+            
+            }
+
+        .grid-container > div {
+            background-color: #ffffff;
+            border-radius: 10px;
+        }
+        .grid-container img{
+        object-fit: cover;
+        width: 100%;
+        }
+
+        .grid-btn1{
+            position: absolute;
+            top: 70%;
+            left: 53%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: #543864;
+            color: white;
+            font-size: 16px;
+            padding: 12px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .grid-btn2{
+            position: absolute;
+            top: 70%;
+            left: 87%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: #543864;
+            color: white;
+            font-size: 16px;
+            padding: 12px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .grid-btn3{
+            position: absolute;
+            top: 115%;
+            left: 53%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: #543864;
+            color: white;
+            font-size: 16px;
+            padding: 12px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .grid-btn4{
+            position: absolute;
+            top: 115%;
+            left: 87%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: #543864;
+            color: white;
+            font-size: 16px;
+            padding: 12px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .btn-container{
+        display: flex;
+        justify-content: right;
+        }
+
+       .addimage-btn{
+        
+            width: 120px;
+            font-size: 16px;
+            font-family: Metropolis;
+            font-weight: 400;
+            padding: 12px;
+            margin: 5px 30px 40px;
+            background-color:#543864;
+            color: #ffffff;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+            box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        }
+
+        .box2{
+            text-align: center;
+            margin: auto;
+            width: 60%;
+            padding: 10px;
+           margin-bottom: 1em;
+           padding: 1em;
+           border: 1px solid #E2E2E2;
+           width: 300px;
+           font-size: 14px;
+            font-family: Metropolis;
+            font-weight: 400;
+       }
+       .photo-cancel{
+        padding-left: 270px;
+       }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="left-sidebar">
+        </section>
+        <section class="main-content">
+            <div class="box1">
+                <div class="top-wrap">
+                    <div class="top-content">
+                        <img src="/assets/Arrow - Right 3.png" alt="">
+                        <span class="content-text">Image</span>
+                    </div>
+                    <button class="save-btn">Save</button>
+
+                </div>
+                <p class="descripton-text">You can replace any of the displayed images with another image of your choice by clicking <br>on the edit button.</p>
+                
+                <div class="grid-container">
+                    <div><img src="/assets/image1 (1).png" alt="" ><button class="grid-btn1">Edit</button></div>
+                    <div><img src="/assets/image1 (2).png" alt=""><button class="grid-btn2">Edit</button></div>
+                    <div><img src="/assets/image1 (3).png" alt=""><button class="grid-btn3">Edit</button></div>  
+                    <div><img src="/assets/image1 (4).png" alt=""><button class="grid-btn4">Edit</button></div>
+   
+                </div> 
+                <div class="btn-container">
+                    <button class="addimage-btn">Add Image</button>
+                </div>
+               
+            </div>
+
+            <div class="box2">
+                <img src="/assets/cancel.png" alt="" class="photo-cancel">
+                <p id="text-2">Change image from photo library.</p>
+            </div>
+        </section>
+       
+        
+    </div>
+  
+</body>
+</html>

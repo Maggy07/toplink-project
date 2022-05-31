@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loginPage</title>
+
+    <style>    
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0;
+}
+.col-1{
+    margin-left: 80px;
+    flex-basis: 40%;
+   margin-top: 83px;
+    margin-bottom: auto;
+    position: relative;
+}
+
+.back-arrow{
+    width: 40px;
+    height: 35px;
+    padding-bottom:87px;
+
+}
+
+form h1 {
+    font-family: metropolis;
+    font-size: 48px;
+    font-weight:800, extra bold;
+    position:relative;
+    margin-bottom: 48px;
+  }
+
+label {
+    color:#121212;
+    display:block;
+    padding-bottom:16px;
+    font-size: 20px;
+    font-family: metropolis;
+    font-weight:400, regular;
+   
+}
+
+#text-or{
+    margin-left: 260px;
+    font-family: metropolis;
+    font-size: 20px;
+    font-weight:400, regular;
+    
+}
+#text-signup{
+    font-weight: bold;
+    color:#543864;
+}
+#no-account{
+    font-family: metropolis;
+    font-size: 20px;
+    font-weight:400, normal;
+    margin-bottom: 28px;
+}
+
+input[type=text]{
+    width:522px;
+    padding: 20px 10px;
+    background: #EEEEEE;
+    border:none;
+    border-radius:8px;
+    margin-bottom:24px;
+}
+input[type=password] {
+ 	width:522px;
+    padding: 20px 10px;
+    background: #EEEEEE;
+    border:none;
+    border-radius:8px;
+}
+
+label[for=remember]{
+    color:#121212;
+ display:inline-block;
+ padding-bottom:40px;
+ 
+}
+
+input[type=checkbox] {
+    display:inline-block;
+    background-color: #543864;
+
+}
+
+.login-btn{
+    width:542px;
+    padding: 20px 10px;
+   border:none;
+    border-radius:8px;
+    background: #543864;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    font-family: metropolis;
+    font-size: 20px;
+    font-weight:700, bold;
+}
+
+.authorize-btn{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width:542px;
+    background: #ffffff;
+    border:1px solid #121212;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.google-icon{
+    width: 20px;
+    padding: 16px;
+}
+#authorize-txt{
+    font-family: metropolis;
+    font-size: 20px;
+    font-weight:400, normal;
+}
+.col-2{
+position: relative;
+margin-top: -10px;
+flex-basis: 40%;
+display: flex;
+align-items: center;
+}
+
+.col-2 .login-image{
+width: 635px;
+height: 970px;
+transform: translateX(8px);
+}
+
+.col-2 .color-box{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #543864;
+    height: 970px;
+    width: 630px;
+    z-index: -1;
+    transform: translateX(8px);
+}
+    </style>
+</head>
+<body>
+    
+    <div class="wrapper">
+    <form class="col-1">
+        <img src="assets/arrow.png" class="back-arrow">
+        <h1>Login</h1>
+            <p>
+                <label for="email">Email Address</label>
+                <input type="text" name="email" id="email">
+            </p>
+            <p>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+            </p>
+            <p>
+                <input type="checkbox" name="remember" id="remember">
+                <label for="remember">Remember Password</label>
+            </p>
+       
+                 <button class="login-btn">Login</button>
+            <P id="no-account">
+                Don’t have an account? <span id="text-signup"> Sign up </span>
+            </P>
+
+            <P id="text-or">
+                Or
+            </P>
+            <button class="authorize-btn"><img src="assets/google-icon.png" class="google-icon"> <span id="authorize-txt"> Authorize with Google </span></button>
+    </form>
+  
+    <div class="col-2">
+        <img src="assets/flat-image.png" class="login-image">
+        <div class="color-box"></div>
+    </div>
+    
+</div> 
+</body>
+</html>

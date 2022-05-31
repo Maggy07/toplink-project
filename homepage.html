@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+
+    <style>
+@font-face{
+font-family: Metropolis;
+src:url(../font/Metropolis-ExtraBold.otf);
+font-weight:800;
+}
+
+@font-face{
+font-family: Metropolis;
+src:url(../font/Metropolis-Bold.otf);
+font-weight:700;
+}
+@font-face{
+font-family: Metropolis;
+src:url(../font/Metropolis-Medium.otf);
+font-weight:500;
+}
+
+@font-face{
+font-family: Metropolis;
+src:url(../font/Metropolis-Regular.otf);
+font-weight:400;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.topnav{
+  display: flex;
+  align-items: center;
+  padding: 18px;
+  color: #ffffff;
+  font-family: Metropolis;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 70px;
+  }
+
+  .backarrow{
+   margin-left: 30px;
+   padding: 8px;
+   
+  }
+  .features-wrap{
+    margin-left: 70px;
+  }
+.home-btn{
+  display: flex;
+  width: 110px;
+    align-items:center;
+    justify-content: center;
+    background: #FFBD69;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-family: Metropolis;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+.home-btn img{
+  padding: 8px;
+  align-items: center;
+
+
+  
+}
+.features-icons{
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-family: Metropolis;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 38px;
+}
+
+.features-icons img{
+ width: 16px;
+}
+
+.icons-description{
+  margin-left: 10px;
+  
+}
+.login-icons{
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-family: Metropolis;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 128px;
+}
+.wrapper {
+  display: flex;
+}
+
+.column {
+  height: 622px; 
+  width: 100%;
+}
+
+.left {
+  position: relative;
+  width: 21%;
+  background-color:#543864
+}
+
+.right {
+  width: 79%;
+  position: relative;
+  text-align: center;
+ 
+}
+
+.right .content{
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo{
+  font-family: Metropolis;
+  font-size: 48px;
+  font-weight: 700;
+  padding-top: 165px;
+  margin-bottom: 32px;
+  
+}
+.synq-tips-container{
+  width: 650px;
+  height: 300px;
+  background: #ffffff;
+  margin-bottom: 30px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.cancel-btn{
+  float: right;
+  padding: 16px;
+  margin-right: 16px;
+}
+.synq-tips{
+  font-family: Metropolis;
+  font-size: 28px;
+  font-weight: 700;
+ padding-top: 40px;
+  margin-bottom: 8px;
+
+}
+.share-text{
+  font-family: Metropolis;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.content-text{
+  font-family: Metropolis;
+  font-size: 16px;
+  font-weight: 500;
+  word-spacing: 2px;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.next-btn{
+  width: 150px;
+  font-size: 16px;
+  padding: 12px 10px;
+    background-color:#543864;
+    color: #ffffff;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+.explore-btn{
+  width: 400px;
+  font-size: 16px;
+  padding: 12px 10px;
+    background-color:#543864;
+    color: #ffffff;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+
+</style>
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="column left">
+          <div class="topnav">
+              <img src="assets/logo.png" class="top-logo">
+              <img src="assets/backarrow.png" class="backarrow">
+              <p>Back</p>
+            </div> 
+          <div class="features-wrap">
+            <button class="home-btn"><img src="assets/Home.png"> Home</button>
+
+            <div class="features-icons">
+              <img src="assets/Category.png">
+              <p class="icons-description">Dashboard</p>
+            </div>
+
+            <div class="features-icons">
+              <img src="assets/Setting.png">
+              <p class="icons-description">Settings</p>
+            </div>
+
+            <div class="features-icons">
+              <img src="assets/myAccount.png">
+              <p class="icons-description">My Account</p>
+            </div>
+
+            <div class="features-icons">
+              <img src="assets/commerce.png">
+              <p class="icons-description">Commerce</p>
+            </div>
+
+            <div class="features-icons">
+              <img src="assets/feedback.png">
+              <p class="icons-description">Feedback</p>
+            </div>
+
+            <div class="login-icons">
+              <img src="assets/logout.png">
+              <p class="icons-description">Logout</p>
+            </div>
+
+          </div> 
+        </div>
+
+        <div class="column right">
+          <div class="backgroundEclipses">
+            <img src="assets/Ellipses.png">
+          </div> 
+          <div class="content">
+              <img src="assets/logo.png" class="logo">
+             <div class="synq-tips-container">
+               <img src="assets/cancel.png" class="cancel-btn">
+                <P class="synq-tips">
+                  Tips on Navigating synq.ue
+                </P>
+                <P class="share-text">
+                  A shareable profile link
+                </P>
+                <P class="content-text">
+                  Did you know that you can actually share links to your profile with<br>
+                 clients, prospective clients, friends and anyone at all you wish to?. Just<br>
+                 click on the orange button at the top right corner of your screen.
+                </P>
+                <button class="next-btn">Next</button>  
+            </div>
+              <button class="explore-btn">Explore</button>  
+          </div> 
+   
+        
+        
+        </div>
+      </div>
+      
+    
+</body>
+</html>
